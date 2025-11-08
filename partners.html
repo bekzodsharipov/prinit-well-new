@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Well</title>
+
+
+    <style>
+        .partner-row {
+            display: flex;
+            flex-wrap: nowrap;
+            will-change: transform;
+        }
+
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        @keyframes scroll-right {
+            0% {
+                transform: translateX(-50%);
+            }
+
+            100% {
+                transform: translateX(50%);
+            }
+        }
+
+        .animate-scroll-left {
+            display: flex;
+            width: max-content;
+            animation: scroll-left 60s linear infinite;
+        }
+
+        .animate-scroll-right {
+            display: flex;
+            width: max-content;
+            animation: scroll-right 60s linear infinite;
+        }
+
+        .partner-card {
+            transition: transform 0.3s;
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="/output.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <section class="pt-10 md:pt-16 pb-17.75 md:pb-30 text-black">
+        <div class="max-w-418 mx-auto px-4 font-[Unbounded]">
+            <h1 class="text-2xl md:text-4xl lg:text-5xl font-bold leading-[1.2] mb-4 md:mb-3.25">Наши партнеры</h1>
+            <p class="text-xs md:text-base font-light leading-4 md:leading-6 max-w-183.5 mb-4 md:mb-6">Вашему вниманию
+                представляется Print.uz — ваш
+                верный спутник в мире полиграфии, который с 1997 года
+                воплощает в жизнь самые смелые идеи.</p>
+            <img class="max-w-408 w-full h-47.25 object-cover sm:h-60 md:h-80 lg:h-119"
+                src="./public/images/partners/news.avif" alt="news">
+        </div>
+    </section>
+
+    <section class="pb-16 md:pb-30">
+        <div class="max-w-418 mx-auto px-4 font-[Unbounded]">
+            <div class="flex items-start justify-between">
+                <div class="">
+                    <h1 class="text-8xl md:text-9xl lg:text-[215px] font-bold leading-[1.2] mb-4">250</h1>
+                    <h3
+                        class="text-[56px] w-full lg:text-5xl md:opacity-100 opacity-30 font-light md:font-normal leading-16 md:leading-18 text-[#000000] md:text-[#2990FF]">
+                        Наши доволь ные клиенты</h3>
+                </div>
+
+                <img class="hidden lg:block" src="./public/images/partners/partners-img.avif" alt="partners img">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#F1F5F9] py-16 md:py-30 overflow-x-hidden">
+        <div class="max-w-418 mx-auto px-4">
+
+            <div class="space-y-2 md:space-y-8">
+                <div class="partner-row flex gap-4" data-direction="left">
+                    <div
+                        class="partner-card bg-white w-[204px] md:w-[259px] h-[88px] md:h-[110px] rounded-lg flex items-center justify-center flex-shrink-0">
+                        <img src="./public/images/partners/icons (1).png" alt=""
+                            class="object-contain w-40 md:w-[189px] h-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
+                    </div>
+                    <div
+                        class="partner-card bg-white w-[204px] md:w-[259px] h-[88px] md:h-[110px] rounded-lg flex items-center justify-center flex-shrink-0">
+                        <img src="./public/images/partners/icons (2).png" alt=""
+                            class="object-contain w-35 md:w-[155px] h-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
+                    </div>
+                    <div
+                        class="partner-card bg-white w-[204px] md:w-[259px] h-[88px] md:h-[110px] rounded-lg flex items-center justify-center flex-shrink-0">
+                        <img src="./public/images/partners/icons (3).png" alt=""
+                            class="object-contain w-[100px] md:w-[110px] h-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
+                    </div>
+                    <div
+                        class="partner-card bg-white w-[204px] md:w-[259px] h-[88px] md:h-[110px] rounded-lg flex items-center justify-center flex-shrink-0">
+                        <img src="./public/images/partners/icons (4).png" alt=""
+                            class="object-contain w-[95px] md:w-[111px] h-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
+                    </div>
+                    <div
+                        class="partner-card bg-white w-[204px] md:w-[259px] h-[88px] md:h-[110px] rounded-lg flex items-center justify-center flex-shrink-0">
+                        <img src="./public/images/partners/icons (5).png" alt=""
+                            class="object-contain w-[130px] md:w-[151px] h-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
+                    </div>
+                </div>
+
+                <div class="partner-row flex gap-4" data-direction="right">
+                    <div
+                        class="partner-card bg-white w-[204px] md:w-[259px] h-[88px] md:h-[110px] rounded-lg flex items-center justify-center flex-shrink-0">
+                        <img src="./public/images/partners/icons (1).png" alt=""
+                            class="object-contain w-40 md:w-[189px] h-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
+                    </div>
+                    <div
+                        class="partner-card bg-white w-[204px] md:w-[259px] h-[88px] md:h-[110px] rounded-lg flex items-center justify-center flex-shrink-0">
+                        <img src="./public/images/partners/icons (2).png" alt=""
+                            class="object-contain w-35 md:w-[155px] h-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
+                    </div>
+                    <div
+                        class="partner-card bg-white w-[204px] md:w-[259px] h-[88px] md:h-[110px] rounded-lg flex items-center justify-center flex-shrink-0">
+                        <img src="./public/images/partners/icons (3).png" alt=""
+                            class="object-contain w-[100px] md:w-[110px] h-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
+                    </div>
+                    <div
+                        class="partner-card bg-white w-[204px] md:w-[259px] h-[88px] md:h-[110px] rounded-lg flex items-center justify-center flex-shrink-0">
+                        <img src="./public/images/partners/icons (4).png" alt=""
+                            class="object-contain w-[95px] md:w-[111px] h-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
+                    </div>
+                    <div
+                        class="partner-card bg-white w-[204px] md:w-[259px] h-[88px] md:h-[110px] rounded-lg flex items-center justify-center flex-shrink-0">
+                        <img src="./public/images/partners/icons (5).png" alt=""
+                            class="object-contain w-[130px] md:w-[151px] h-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
+                    </div>
+                </div>
+
+                <div class="partner-row flex gap-4" data-direction="left">
+                    <div
+                        class="partner-card bg-white w-[204px] md:w-[259px] h-[88px] md:h-[110px] rounded-lg flex items-center justify-center flex-shrink-0">
+                        <img src="./public/images/partners/icons (1).png" alt=""
+                            class="object-contain w-40 md:w-[189px] h-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
+                    </div>
+                    <div
+                        class="partner-card bg-white w-[204px] md:w-[259px] h-[88px] md:h-[110px] rounded-lg flex items-center justify-center flex-shrink-0">
+                        <img src="./public/images/partners/icons (2).png" alt=""
+                            class="object-contain w-35 md:w-[155px] h-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
+                    </div>
+                    <div
+                        class="partner-card bg-white w-[204px] md:w-[259px] h-[88px] md:h-[110px] rounded-lg flex items-center justify-center flex-shrink-0">
+                        <img src="./public/images/partners/icons (3).png" alt=""
+                            class="object-contain w-[100px] md:w-[110px] h-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
+                    </div>
+                    <div
+                        class="partner-card bg-white w-[204px] md:w-[259px] h-[88px] md:h-[110px] rounded-lg flex items-center justify-center flex-shrink-0">
+                        <img src="./public/images/partners/icons (4).png" alt=""
+                            class="object-contain w-[95px] md:w-[111px] h-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
+                    </div>
+                    <div
+                        class="partner-card bg-white w-[204px] md:w-[259px] h-[88px] md:h-[110px] rounded-lg flex items-center justify-center flex-shrink-0">
+                        <img src="./public/images/partners/icons (5).png" alt=""
+                            class="object-contain w-[130px] md:w-[151px] h-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
+                    </div>
+                </div>
+
+                <div class="partner-row flex gap-4" data-direction="right">
+                    <div
+                        class="partner-card bg-white w-[204px] md:w-[259px] h-[88px] md:h-[110px] rounded-lg flex items-center justify-center flex-shrink-0">
+                        <img src="./public/images/partners/icons (1).png" alt=""
+                            class="object-contain w-40 md:w-[189px] h-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
+                    </div>
+                    <div
+                        class="partner-card bg-white w-[204px] md:w-[259px] h-[88px] md:h-[110px] rounded-lg flex items-center justify-center flex-shrink-0">
+                        <img src="./public/images/partners/icons (2).png" alt=""
+                            class="object-contain w-35 md:w-[155px] h-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
+                    </div>
+                    <div
+                        class="partner-card bg-white w-[204px] md:w-[259px] h-[88px] md:h-[110px] rounded-lg flex items-center justify-center flex-shrink-0">
+                        <img src="./public/images/partners/icons (3).png" alt=""
+                            class="object-contain w-[100px] md:w-[110px] h-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
+                    </div>
+                    <div
+                        class="partner-card bg-white w-[204px] md:w-[259px] h-[88px] md:h-[110px] rounded-lg flex items-center justify-center flex-shrink-0">
+                        <img src="./public/images/partners/icons (4).png" alt=""
+                            class="object-contain w-[95px] md:w-[111px] h-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
+                    </div>
+                    <div
+                        class="partner-card bg-white w-[204px] md:w-[259px] h-[88px] md:h-[110px] rounded-lg flex items-center justify-center flex-shrink-0">
+                        <img src="./public/images/partners/icons (5).png" alt=""
+                            class="object-contain w-[130px] md:w-[151px] h-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+        document.querySelectorAll(".partner-row").forEach((row) => {
+            const direction = row.dataset.direction;
+            const content = row.innerHTML;
+            row.innerHTML += content;
+            if (direction === "left") {
+                row.classList.add("animate-scroll-left");
+            } else {
+                row.classList.add("animate-scroll-right");
+            }
+        });
+    </script>
+    <script defer src="./public/js/app.js"></script>
+</body>
+
+</html>
